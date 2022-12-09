@@ -21,6 +21,7 @@ function App() {
         setListOfUsers([...listOfUsers, { name, age, username }]);
       });
   };
+
   return (
     <div className="App">
       <h1>리뷰</h1>
@@ -30,7 +31,7 @@ function App() {
           return (
             <div className="list">
               <div>
-                <User user={user} />{' '}
+                <User user={user} />
               </div>
 
               <h3>
@@ -64,7 +65,7 @@ function App() {
           placeholder="write a review"
           onChange={(event) => setUsername(event.target.value)}
         />
-        <button onClick={createUser}>createUser</button>
+        <button onClick={createUser}>제출!</button>
       </div>
     </div>
   );
