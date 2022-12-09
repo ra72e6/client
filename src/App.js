@@ -26,7 +26,7 @@ function App() {
           return (
             <div className="list">
               <h3>
-                Name: {user.name}, Age: {user.age}, Username:
+                Name: {user.name}, bookname: {user.age}, Review:
                 {user.username}
               </h3>
             </div>
@@ -42,17 +42,17 @@ function App() {
         />
 
         <input
-          type="number"
-          placeholder="Age"
+          type="text"
+          placeholder="bookname"
           onChange={(event) => setAge(event.target.value)}
         />
 
         <input
           type="text"
-          placeholder="Username"
+          placeholder="write a review"
           onChange={(event) => setUsername(event.target.value)}
         />
-        <button onClick={createUser}>Create User</button>
+        <button onClick={createUser}>createUser</button>
       </div>
     </div>
   );
