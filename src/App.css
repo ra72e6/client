@@ -37,7 +37,14 @@
   }
 }
 .list {
-  background-color: lightgrey;
+  background-color: rgb(205, 138, 138);
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  grid-gap: 1rem;
 }
