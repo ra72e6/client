@@ -23,7 +23,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>List of Users</h1>
+      <h1>리뷰</h1>
 
       <div className="gird">
         {listOfUsers.map((user) => {
@@ -34,8 +34,12 @@ function App() {
               </div>
 
               <h3>
-                Name: {user.name}, bookname: {user.age}, Review:
-                {user.username}
+                <p>Name: {user.name}</p>
+                <p>bookname: {user.age}</p>
+                <p>
+                  Review:
+                  {user.username}
+                </p>
               </h3>
             </div>
           );
