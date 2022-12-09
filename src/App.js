@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import User from './components/User';
+
 function App() {
   const [listOfUsers, setListOfUsers] = useState([]);
   const [name, setName] = useState('');
@@ -21,10 +23,16 @@ function App() {
   };
   return (
     <div className="App">
-      <div>
+      <h1>List of Users</h1>
+
+      <div className="gird">
         {listOfUsers.map((user) => {
           return (
             <div className="list">
+              <div>
+                <User user={user} />{' '}
+              </div>
+
               <h3>
                 Name: {user.name}, bookname: {user.age}, Review:
                 {user.username}
